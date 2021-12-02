@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <header>
+        <h1>U.S. Weather Machine</h1>
+    </header>
+    
+    <img id="cloud" src="/images/cloud.png" alt="image of a cloud">
+    
+    <form action="" method="post">
+        <label for="location">Enter City</label>
+        <input type="text" name="location" id="location"><br>
+        <button  class="btn" type="submit" onclick="AjaxCall()">Search</button>
+        <div id="display"></div>
+    </form>
+    <img id="cloud2" src="/images/cloud2.png" alt="image of another cloud"><br>
+    <img id="cloud3" src="/images/cloud3.png" alt="image of a third cloud">
+    <footer>
+        &copy; L&K Design 2021
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
