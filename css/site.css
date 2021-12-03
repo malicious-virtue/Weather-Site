@@ -22,8 +22,15 @@ form {
    
 }
 
+label{
+    color:#f8f8ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
 footer {
     font-size: .75rem;
+    color:#f8f8ff
 }
 
 #cloud {

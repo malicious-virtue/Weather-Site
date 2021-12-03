@@ -32,12 +32,13 @@ function AjaxCall() {
                let currentTemp = Math.round((temp - 273.15) * 9/5 + 32);
                 let tempMin = Math.round((min - 273.15) * 9/5 + 32);
                let tempMax = Math.round((max - 273.15) * 9/5 + 32);
-                document.getElementsById("city-name").innerHTML = name;
-                document.getElementById("current-temp").innerHTML = currentTemp;
-                document.getElementById("min").innerHTML = tempMin;
-                document.getElementById("max").innerHTML = tempMax;
+               
+               document.getElementById("city-name").innerHTML = name;
+               document.getElementById("current-temp").innerHTML = currentTemp;
+               document.getElementById("min").innerHTML = tempMin;
+               document.getElementById("max").innerHTML = tempMax;
             }
-            
+           
         };     
         xhr.send();
     }
