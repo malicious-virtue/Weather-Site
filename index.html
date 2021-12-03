@@ -15,14 +15,23 @@
     
     <img id="cloud" src="/images/cloud.png" alt="image of a cloud">
     
-    <form action="" method="post">
-        <label for="location">Enter City</label>
+    <form action="" method="GET">
+        <label for="location">Enter City, State</label>
         <input type="text" name="location" id="location"><br>
-        <button  class="btn" type="submit" onclick="AjaxCall()">Search</button>
-        <div id="display"></div>
+        <button  class="btn" type="button" onclick="AjaxCall()">Search</button>
+        
     </form>
+   
     <img id="cloud2" src="/images/cloud2.png" alt="image of another cloud"><br>
     <img id="cloud3" src="/images/cloud3.png" alt="image of a third cloud">
+    
+    <div class="card">
+        <div id="error"></div>
+        <h2 id="city-name"></h2>
+        <p class="temp">Temperature <span id="current-temp"></span> degrees</p>
+        <p class="temp">Temperature Low: <span id="min"></span> degrees</p>
+        <p class="temp">Temperature High: <span id="max"></span> degrees</p>
+    </div>
     <footer>
         &copy; L&K Design 2021
     </footer>
