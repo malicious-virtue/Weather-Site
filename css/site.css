@@ -40,6 +40,19 @@ footer {
     left: 200px;
     bottom: 300px; 
 }
+#error{
+    text-align: center;
+    color:#f8f8ff;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#city-name {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f8f8ff;
+   
+}
 
 .btn {
     -webkit-border-radius: 9;
@@ -58,4 +71,34 @@ footer {
   .btn:hover {
     background: #0369a8;
     text-decoration: none;
+  }
+
+  .card {
+      position: relative;
+      left:500px;
+      bottom: 50px;
+      background-color:#00BFFF ;
+      max-width: 30ch;
+      border-radius: 5px;
+      box-shadow:  5px 10px grey;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+  .temp {
+    color: #f8f8ff;
+    padding-left: 5px; 
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+
+  }
+
+  #current-temp {
+    margin-left: 100px;
+  }
+  #min {
+    margin-left: 45px  
+  }
+  #max {
+    margin-left: 40px
   }

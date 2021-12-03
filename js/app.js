@@ -6,7 +6,7 @@ function Validation() {
         valid = false;
         error = "Enter in a location";
     }
-    document.getElementById("display").innerHTML = error;
+    document.getElementById("error").innerHTML = error;
     return validate;
 }
 
@@ -23,9 +23,19 @@ function AjaxCall() {
            
           xhr.onreadystatechange= function(){
             if(xhr.readyState === 4 && xhr.status === 200){
-               console.log(xhr.responseText);
-               // document.getElementById("display").innerHTML = fetchedData;
-                //console.log(fetchedData);
+                let fetchedData = JSON.parse(xhr.responseText);
+                let temp = fetchedData.main.temp;
+                let name = fetchedData.name;
+                let min = fetchedData.main.temp_min;
+                let max = fetchedData.main.temp_max;
+               
+               let currentTemp = Math.round((temp - 273.15) * 9/5 + 32);
+                let tempMin = Math.round((min - 273.15) * 9/5 + 32);
+               let tempMax = Math.round((max - 273.15) * 9/5 + 32);
+                document.getElementsById("city-name").innerHTML = name;
+                document.getElementById("current-temp").innerHTML = currentTemp;
+                document.getElementById("min").innerHTML = tempMin;
+                document.getElementById("max").innerHTML = tempMax;
             }
             
         };     
